@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro</title>
+</head>
+<body style="background-color:#5d6b7a;">
+    <div class="header">
+        <img src="img/logo.png" alt="logo">
+            <center>   
+                <font size="9" style="background-color:#77899c; 
+                                    height:30px; 
+                                    width:300px;">
+                    Sistema de Cadastro e Consulta de Pacientes<br>
+                    Hospital Psiquiatrico    
+                </font>
+            </center>
+    </div>
+    <div class="container">
+        <center>
+            <form action="cadastro.php" method="POST" id="cadastro">
+                <h1 style="background-color:#77899c; 
+                        height:40px; 
+                        width:400px;">
+                    Cadastro de Paciente
+                </h1>
+                <input type="text" placeholder="Nome" name="name" required><br>
+                <input type="number" placeholder="CPF (somente numeros)" name="cpf" required><br>
+                <input type="date" placeholder="Data de nascimento" name="datanasc"><br>
+                <input type="number" placeholder="CEP (somente numeros)" name="cep" required><br>
+                <input type="text" placeholder="Rua" name="rua" required><br>
+                <input type="number" placeholder="Numero" name="numero" required><br>
+                <input type="text" placeholder="Bairro" name="bairro" required><br>
+                <input type="text" placeholder="Cidade" name="cidade" required><br>
+                <select id="estado" name="estado" >
+                    <option value="">Estado</option>
+                    <option value="AC">AC</option>
+                    <option value="AL">AL</option>
+                    <option value="AP">AP</option>
+                    <option value="AM">AM</option>
+                    <option value="BA">BA</option>
+                    <option value="CE">CE</option>
+                    <option value="DF">DF</option>
+                    <option value="ES">ES</option>
+                    <option value="GO">GO</option>
+                    <option value="MA">MA</option>
+                    <option value="MS">MS</option>
+                    <option value="MT">MT</option>
+                    <option value="MG">MG</option>
+                    <option value="PA">PA</option>
+                    <option value="PB">PB</option>
+                    <option value="PR">PR</option>
+                    <option value="PE">PE</option>
+                    <option value="PI">PI</option>
+                    <option value="RJ">RJ</option>
+                    <option value="RN">RN</option>
+                    <option value="RS">RS</option>
+                    <option value="RO">RO</option>
+                    <option value="RR">RR</option>
+                    <option value="SC">SC</option>
+                    <option value="SP">SP</option>
+                    <option value="SE">SE</option>
+                    <option value="TO">TO</option>
+                </select><br>
+                <select id="sexo" name="sexo">
+                    <option value="">Sexo</option>
+                    <option value="Masculino">Masculino</option>
+                    <option value="Feminino">Feminino</option>
+                </select><br><br>
+                <input type="submit" value="Cadastrar" style="font-size: 20px; 
+                                                            color:floralwhite;
+                                                            height:40px; 
+                                                            width:150px; 
+                                                            background-color:darkslateblue">
+            </form>
+            <form action="index.html" id="voltar">
+                <input type="submit" value="Voltar" style="font-size: 20px; 
+                                                        color:floralwhite;
+                                                        height:40px; 
+                                                        width:150px; 
+                                                        background-color:darkslateblue">
+            </form>
+        <style>
+            .footer {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background-color: #77899c;
+            color: white;
+            text-align: center;
+            font-size: 13px;
+            }
+            </style>
+        <div class="footer">
+            <p>Trata-se de um projeto para a disciplina Bases de Dados II da USP-RP - Todos os dados são fictícios<br>
+                2021 - v1.4
+            </p>
+        </div>
+        </center>
+    </div>
+</body>
+</html>

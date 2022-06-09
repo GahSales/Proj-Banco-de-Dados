@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head></head>
+    <meta charset="UTF-8">
+    <title>Consulta</title>
+</head>
+<body style="background-color:#5d6b7a;">
+    <div class="header">
+        <img src="img/logo.png" alt="logo">
+        <center>
+            <font size="9" style="background-color:#77899c; 
+                                height:30px; 
+                                width:300px;">
+                Sistema de Cadastro e Consulta de Pacientes<br>
+                Hospital Psiquiatrico    
+            </font>
+        </center>
+    </div>
+    <div class="container">
+        <center>
+            <form action='consulta.php' method='POST' id="consulta">
+                <h2 style="background-color:#77899c; 
+                        height:30px; 
+                        width:300px;">
+                    Consultar Paciente por:
+                </h2>
+                <input type="text" placeholder="Nome" name="nameCons" required>
+                <input type="submit" value="Buscar" style="color:floralwhite;
+                                                        height:30px; 
+                                                        width:60px; 
+                                                        background-color:darkslateblue"><br><br>
+            </form>
+            <form action='consulta.php' method='POST' id="consulta1">
+                <input type="text" placeholder="CPF" name="cpfCons" required>
+                <input type="submit" value="Buscar" style="color:floralwhite;
+                                                        height:30px; 
+                                                        width:60px; 
+                                                        background-color:darkslateblue"><br><br>
+            </form>
+            <form action='consulta.php' method='POST' id="consulta2">
+                <input type="text" placeholder="Bairro" name="bairroCons" required>
+                <input type="submit" value="Buscar" style="color:floralwhite;
+                                                        height:30px; 
+                                                        width:60px; 
+                                                        background-color:darkslateblue"><br><br>
+            </form>
+            <form action='consulta.php' method='POST' id="consulta3">
+                <input type="text" placeholder="Sexo" name="sexoCons" required>
+                <input type="submit" value="Buscar" style="color:floralwhite;
+                                                        height:30px; 
+                                                        width:60px; 
+                                                        background-color:darkslateblue">
+            </form><br><br>
+            <form action="index.html" id="voltar">
+                <input type="submit" value="Voltar" style="font-size: 20px; 
+                                                        color:floralwhite;
+                                                        height:40px; 
+                                                        width:150px; 
+                                                        background-color:darkslateblue">
+            </form>
+        </center>
+    </div>
+        <style>
+            .footer {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background-color: #77899c;
+            color: white;
+            text-align: center;
+            font-size: 12px;
+            }
+        </style>
+    <div class="footer">
+        <p>Trata-se de um projeto para a disciplina Bases de Dados II da USP-RP - Todos os dados são ficticios<br>
+            2021 - v1.4
+        </p>
+    </div>
+</body>
+</html>
