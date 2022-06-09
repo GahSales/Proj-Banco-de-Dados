@@ -1,2 +1,2 @@
 # Proj-Banco-de-Dados
-Banco de dados da farmácia de um hospital
+Projeto da disciplina banco de dados, implementa o banco de dados de uma farmácia de um hospital, que pode ser acessado via Web.
